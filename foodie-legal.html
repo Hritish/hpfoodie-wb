@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie. — Legal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #F5F0E8;
+            color: #1a1a1a;
+            line-height: 1.7;
+        }
+        header {
+            background-color: #F5F0E8;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            padding: 20px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo { font-size: 24px; font-weight: 800; color: #2D6A4F; letter-spacing: -0.5px; }
+        nav a { text-decoration: none; color: #2D6A4F; font-size: 14px; font-weight: 600; margin-left: 24px; }
+        nav a:hover { text-decoration: underline; }
+        .hero {
+            background: linear-gradient(135deg, #2D6A4F 0%, #40916C 100%);
+            color: white;
+            padding: 60px 24px;
+            text-align: center;
+        }
+        .hero h1 { font-size: 36px; font-weight: 800; margin-bottom: 12px; letter-spacing: -1px; }
+        .hero p { font-size: 16px; opacity: 0.85; max-width: 500px; margin: 0 auto; }
+        .container { max-width: 780px; margin: 0 auto; padding: 48px 24px 80px; }
+        .section-tabs { display: flex; gap: 12px; margin-bottom: 40px; }
+        .tab {
+            padding: 10px 24px;
+            border-radius: 100px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+        }
+        .tab.active { background: #2D6A4F; color: white; }
+        .tab.inactive { background: white; color: #2D6A4F; border: 1.5px solid #2D6A4F; }
+        .section { display: none; }
+        .section.active { display: block; }
+        .updated { font-size: 13px; color: #888; margin-bottom: 32px; }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #2D6A4F;
+            margin: 36px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(45,106,79,0.12);
+        }
+        h2:first-of-type { margin-top: 0; }
+        p { margin-bottom: 14px; font-size: 15px; color: #333; }
+        ul { margin: 8px 0 16px 0; padding-left: 20px; }
+        ul li { font-size: 15px; color: #333; margin-bottom: 8px; }
+        .highlight {
+            background: rgba(45,106,79,0.06);
+            border-left: 3px solid #2D6A4F;
+            padding: 14px 18px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+            font-size: 15px;
+            color: #2D6A4F;
+            font-weight: 500;
+        }
+        .contact-card {
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 40px;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+        }
+        .contact-card h3 { font-size: 18px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+        .contact-card a { color: #2D6A4F; font-weight: 600; text-decoration: none; font-size: 15px; }
+        .contact-card a:hover { text-decoration: underline; }
+        footer { background: #2D6A4F; color: white; text-align: center; padding: 24px; font-size: 13px; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 28px; }
+            .section-tabs { flex-wrap: wrap; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Foodie.</div>
+    <nav>
+        <a href="mailto:hritish@hpfoodie.com">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Legal &amp; Privacy</h1>
+    <p>We believe in being transparent about how we handle your data and what you can expect from us.</p>
+</div>
+
+<div class="container">
+    <div class="section-tabs">
+        <button class="tab active" onclick="showSection('privacy', this)">Privacy Policy</button>
+        <button class="tab inactive" onclick="showSection('terms', this)">Terms of Service</button>
+    </div>
+
+    <!-- PRIVACY POLICY -->
+    <div id="privacy" class="section active">
+        <p class="updated">Last updated: June 1, 2026</p>
+
+        <div class="highlight">
+            Your privacy matters to us. Foodie. does not sell your personal data to anyone, ever.
+        </div>
+
+        <h2>Overview</h2>
+        <p>Foodie. ("we", "us", or "our") is a restaurant discovery and journaling app built to help you find, save, and remember great restaurants. This Privacy Policy explains what information we collect, how we use it, and your rights regarding your data.</p>
+
+        <h2>Information We Collect</h2>
+        <p>We collect the following types of information when you use Foodie.:</p>
+        <ul>
+            <li><strong>Account information</strong> — your email address, display name, username, and profile photo when you create an account</li>
+            <li><strong>Food preferences</strong> — favorite cuisine, spice tolerance, dietary preferences, and other preferences you choose to share</li>
+            <li><strong>Restaurant data</strong> — restaurants you save, personal ratings and reviews you write, and photos you upload from your visits</li>
+            <li><strong>Location data</strong> — your approximate location when you use the Discover feature, used only to find nearby restaurants</li>
+            <li><strong>Usage data</strong> — basic app interactions to help us improve the experience</li>
+        </ul>
+
+        <h2>How We Use Your Information</h2>
+        <ul>
+            <li>To provide the core Foodie. service — saving restaurants, showing recommendations, and displaying your journal</li>
+            <li>To authenticate your account securely via Apple Sign In or Google Sign In</li>
+            <li>To improve app performance and fix bugs</li>
+            <li>We do <strong>not</strong> use your data for advertising purposes</li>
+            <li>We do <strong>not</strong> sell your data to third parties</li>
+        </ul>
+
+        <h2>Third Party Services</h2>
+        <p>Foodie. uses the following third party services to operate:</p>
+        <ul>
+            <li><strong>Supabase</strong> — securely stores your account information, saved restaurants, reviews, and photos</li>
+            <li><strong>Yelp Fusion API</strong> — provides restaurant search results and business information</li>
+            <li><strong>Apple Sign In</strong> — optional authentication method</li>
+            <li><strong>Google Sign In</strong> — optional authentication method</li>
+        </ul>
+        <p>Each of these services has their own privacy policies governing how they handle data.</p>
+
+        <h2>Data Storage &amp; Security</h2>
+        <p>Your data is stored securely on Supabase infrastructure. Photos you upload are stored in secure cloud storage. We use industry-standard security practices to protect your information.</p>
+
+        <h2>Your Rights</h2>
+        <ul>
+            <li><strong>Access</strong> — you can view all your data within the app at any time</li>
+            <li><strong>Deletion</strong> — you can permanently delete your account and all associated data from the Profile tab in the app. Deletion is immediate and irreversible.</li>
+            <li><strong>Export</strong> — contact us at hritish@hpfoodie.com to request a copy of your data</li>
+        </ul>
+
+        <h2>Children's Privacy</h2>
+        <p>Foodie. is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+        <div class="contact-card">
+            <h3>Questions about your privacy?</h3>
+            <p style="color: #666; margin-bottom: 8px;">We're happy to help.</p>
+            <a href="mailto:hritish@hpfoodie.com">hritish@hpfoodie.com</a>
+        </div>
+    </div>
+
+    <!-- TERMS OF SERVICE -->
+    <div id="terms" class="section">
+        <p class="updated">Last updated: June 1, 2026</p>
+
+        <h2>Acceptance of Terms</h2>
+        <p>By downloading or using Foodie. ("the App"), you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use the App.</p>
+
+        <h2>Eligibility</h2>
+        <p>You must be at least 13 years old to use Foodie.. By using the App, you represent that you meet this requirement.</p>
+
+        <h2>Your Account</h2>
+        <ul>
+            <li>You are responsible for maintaining the security of your account</li>
+            <li>You are responsible for all activity that occurs under your account</li>
+            <li>You must provide accurate information when creating your account</li>
+            <li>You may not use another person's account without permission</li>
+        </ul>
+
+        <h2>User Content</h2>
+        <p>Foodie. allows you to post reviews, ratings, and photos ("User Content"). By posting User Content, you agree that:</p>
+        <ul>
+            <li>You own or have the rights to the content you post</li>
+            <li>Your content does not violate any third party rights</li>
+            <li>Your content is accurate and not misleading</li>
+            <li>You will not post offensive, hateful, or illegal content</li>
+        </ul>
+        <p>You retain ownership of your User Content. By posting it, you grant Foodie. a limited license to display it within the app.</p>
+
+        <h2>Prohibited Uses</h2>
+        <p>You may not use Foodie. to:</p>
+        <ul>
+            <li>Violate any applicable laws or regulations</li>
+            <li>Post false, misleading, or defamatory reviews</li>
+            <li>Attempt to reverse engineer or hack the app</li>
+            <li>Use the app for any commercial purpose without our written consent</li>
+            <li>Harass, abuse, or harm other users</li>
+        </ul>
+
+        <h2>Restaurant Information</h2>
+        <p>Restaurant information displayed in Foodie. is sourced from Yelp and may not always be accurate or up to date. Hours, addresses, phone numbers, and menu information can change. Always verify details directly with the restaurant before visiting.</p>
+
+        <h2>Intellectual Property</h2>
+        <p>The Foodie. app, including its design, logo, and code, is owned by Hritish Bhargava. You may not copy, modify, or distribute any part of the app without written permission. Restaurant data is provided by Yelp under their terms of service.</p>
+
+        <h2>Disclaimer of Warranties</h2>
+        <p>Foodie. is provided "as is" without warranties of any kind. We do not guarantee that the app will be error-free, uninterrupted, or that restaurant information will always be accurate.</p>
+
+        <h2>Limitation of Liability</h2>
+        <p>To the fullest extent permitted by law, Foodie. and its creator shall not be liable for any indirect, incidental, or consequential damages arising from your use of the app.</p>
+
+        <h2>Account Termination</h2>
+        <p>You may delete your account at any time from the Profile tab. We reserve the right to suspend or terminate accounts that violate these terms.</p>
+
+        <h2>Changes to Terms</h2>
+        <p>We may update these Terms of Service at any time. Continued use of the app after changes are posted constitutes your acceptance of the new terms.</p>
+
+        <h2>Governing Law</h2>
+        <p>These terms are governed by the laws of the State of New Jersey, United States, without regard to conflict of law principles.</p>
+
+        <div class="contact-card">
+            <h3>Questions about our terms?</h3>
+            <p style="color: #666; margin-bottom: 8px;">Reach out anytime.</p>
+            <a href="mailto:hritish@hpfoodie.com">hritish@hpfoodie.com</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Foodie. &nbsp;&middot;&nbsp; All rights reserved &nbsp;&middot;&nbsp;
+    <a href="mailto:hritish@hpfoodie.com" style="color: white;">hritish@hpfoodie.com</a>
+</footer>
+
+<script>
+    function showSection(id, btn) {
+        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+        document.querySelectorAll('.tab').forEach(t => {
+            t.classList.remove('active');
+            t.classList.add('inactive');
+        });
+        document.getElementById(id).classList.add('active');
+        btn.classList.add('active');
+        btn.classList.remove('inactive');
+    }
+</script>
+
+</body>
+</html>
